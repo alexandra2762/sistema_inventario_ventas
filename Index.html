@@ -33,3 +33,75 @@
 
 </body>
 </html>
+/* =========================================
+   Estilos para el Dashboard Principal
+========================================= */
+
+/* Barra superior */
+.navbar {
+    background-color: #d88cb3;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Botón salir */
+.btn-salir {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-salir:hover {
+    background-color: white;
+    color: #d88cb3;
+}
+
+/* Contenedor de tarjetas */
+.dashboard-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    padding: 20px;
+    gap: 25px;
+}
+
+/* Tarjetas */
+.tarjeta-modulo {
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(255,182,193,0.4);
+    width: 280px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Hover */
+.tarjeta-modulo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2);
+}
+
+/* Títulos */
+.tarjeta-modulo h3 {
+    color: #d87093;
+}
+
+/* Texto */
+.tarjeta-modulo p {
+    color: #666;
+}
