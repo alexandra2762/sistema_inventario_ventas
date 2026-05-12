@@ -1,7 +1,6 @@
--- Usar la base de datos del proyecto
 USE sistema_inventario;
 
--- Tabla para el módulo de Login y seguridad
+
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre_completo VARCHAR(100) NOT NULL,
@@ -10,7 +9,7 @@ CREATE TABLE usuarios (
     rol VARCHAR(20) NOT NULL
 );
 
--- Tabla para el módulo de Inventario de productos
+
 CREATE TABLE productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre_producto VARCHAR(100) NOT NULL,
@@ -18,3 +17,14 @@ CREATE TABLE productos (
     stock INT NOT NULL,
     precio DECIMAL(10,2) NOT NULL
 );
+
+INSERT INTO usuarios (nombre_completo, usuario, password, rol) VALUES
+('Administrador Principal', 'admin', 'admin123', 'Administrador'),
+('Cajero de Turno', 'cajero1', 'ventas2024', 'Cajero');
+
+-- Insertar lote de inventario inicial
+INSERT INTO productos (nombre_producto, categoria, stock, precio) VALUES
+('Laptop Dell Inspiron 15', 'Computadoras', 10, 650.00),
+('Mouse Inalámbrico Logitech', 'Accesorios', 25, 15.50),
+('Impresora Epson EcoTank', 'Oficina', 5, 210.00),
+('Resma de Papel Tamaño Carta', 'Papelería', 100, 4.25);
