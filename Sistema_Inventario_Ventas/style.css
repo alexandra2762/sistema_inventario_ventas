@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff0f5;
@@ -67,4 +68,49 @@ button {
 
 button:hover {
     background-color: #ec7096;
+}
+
+.contenedor-tabla {
+    margin-top: 100px;
+    padding: 20px 50px;
+}
+
+.btn-nuevo {
+    background-color: #ec7096;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Tabla */
+.tabla-inventario {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Celdas */
+.tabla-inventario th,
+.tabla-inventario td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #f1d6df;
+    text-align: left;
+}
+
+/* Encabezado */
+.tabla-inventario th {
+    background-color: #f8d7e4;
+    color: #b04f72;
+}
+
+/* Hover */
+.tabla-inventario tr:hover {
+    background-color: #fff0f5;
 }
