@@ -1,70 +1,286 @@
+LOGIN
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff0f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
     margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', sans-serif;
+
+    background: linear-gradient(to right, #ffe6f0, #fff5fa);
 }
 
+/* CONTENEDOR LOGIN */
 
 .login-container {
+
     background-color: white;
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
-    width: 320px;
+
+    width: 350px;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px rgba(255,105,180,0.2);
+
+    margin: 80px auto;
 }
 
+/* TITULO */
 
-h2 {
+.login-container h2 {
+
     text-align: center;
-    color: #d87093;
-    margin-bottom: 25px;
-    font-weight: 600;
+
+    color: #d65a92;
+
+    margin-bottom: 30px;
+
+    font-size: 30px;
 }
 
+/* LABELS */
 
-label {
-    color: #c06080;
-    font-size: 15px;
-    font-weight: 500;
-}
+.login-container label {
 
+    color: #a64d79;
 
-input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #f4b6c2;
-    border-radius: 8px;
-    box-sizing: border-box;
-    background-color: #fffafd;
-}
-
-
-input:focus {
-    outline: none;
-    border-color: #d87093;
-    box-shadow: 0 0 5px rgba(216, 112, 147, 0.4);
-}
-
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #f48fb1;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
     font-weight: bold;
-    margin-top: 15px;
+}
+
+/* INPUTS */
+
+.login-container input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 8px;
+
+    margin-bottom: 18px;
+
+    border: 2px solid #ffd1e3;
+
+    border-radius: 15px;
+
+    background-color: #fff8fb;
+
+    box-sizing: border-box;
+
+    outline: none;
+}
+
+/* BOTON */
+
+.login-container button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: linear-gradient(to right, #ff8fb1, #ffb6c1);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
     transition: 0.3s;
 }
 
+.login-container button:hover {
 
-button:hover {
-    background-color: #ec7096;
+    transform: scale(1.03);
+
+    box-shadow: 0 5px 15px rgba(255,105,180,0.3);
+}
+
+/* =========================
+ESTILO GENERAL
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ffe6f0, #fff0f5);
+    color: #5c3b4d;
+}
+
+/* =========================
+BARRA SUPERIOR
+========================= */
+
+.navbar {
+    background-color: #ffb6c1;
+    padding: 18px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar h2 {
+    margin: 0;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* =========================
+BOTÓN DASHBOARD
+========================= */
+
+.btn-salir {
+    text-decoration: none;
+    background-color: white;
+    color: #ff69b4;
+
+    padding: 10px 18px;
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-salir:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+/* =========================
+CONTENEDOR PRINCIPAL
+========================= */
+
+.contenedor-tabla {
+
+    width: 85%;
+    margin: 50px auto;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.15);
+}
+
+/* =========================
+TÍTULO
+========================= */
+
+.contenedor-tabla h3 {
+
+    text-align: center;
+
+    color: #d65a92;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+/* =========================
+BOTÓN NUEVO PRODUCTO
+========================= */
+
+.btn-nuevo {
+
+    background: linear-gradient(to right, #ff8fb1, #ffb6c1);
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 25px;
+
+    transition: 0.3s;
+}
+
+.btn-nuevo:hover {
+
+    transform: scale(1.05);
+
+    box-shadow: 0 5px 15px rgba(255,105,180,0.3);
+}
+
+/* =========================
+TABLA
+========================= */
+
+.tabla-inventario {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+/* ENCABEZADOS */
+
+.tabla-inventario th {
+
+    background-color: #ffb6c1;
+
+    color: white;
+
+    padding: 15px;
+
+    font-size: 16px;
+}
+
+/* CELDAS */
+
+.tabla-inventario td {
+
+    padding: 15px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #ffd6e3;
+
+    font-size: 15px;
+}
+
+/* FILAS */
+
+.tabla-inventario tr {
+
+    background-color: #fff9fb;
+
+    transition: 0.3s;
+}
+
+.tabla-inventario tr:hover {
+
+    background-color: #ffe6f0;
+
+    transform: scale(1.01);
 }
