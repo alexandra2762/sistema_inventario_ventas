@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../sistema_inventario_viejo"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Sistema_Inventario_Ventas"
+	}
+}

@@ -41,11 +41,11 @@ $valor_inventario = $resultado_valor->fetch_assoc()['total'];
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f1f5f9;
+            font-family: Georgia, 'Times New Roman', serif;
+            background: #fff3f6;
             margin: 0;
             padding: 30px;
-            color: #0f172a;
+            color: #4a2635;
         }
 
         .contenedor {
@@ -55,14 +55,15 @@ $valor_inventario = $resultado_valor->fetch_assoc()['total'];
 
         /* Barra de navegación */
         .navbar {
-            background: white;
+            background: #fffafb;
             padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(152, 91, 114, 0.14);
+            border-radius: 10px;
+            border: 1px solid #efd6a8;
         }
 
         .navbar h1 {
@@ -71,7 +72,7 @@ $valor_inventario = $resultado_valor->fetch_assoc()['total'];
         }
 
         .btn-salir {
-            background: #ef4444;
+            background: #b06b7f;
             color: white;
             padding: 8px 15px;
             border-radius: 5px;
@@ -89,25 +90,25 @@ $valor_inventario = $resultado_valor->fetch_assoc()['total'];
 
         /* Diseño de cada métrica */
         .tarjeta {
-            background: white;
+            background: #fffafb;
             flex: 1;
             padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 10px rgba(152, 91, 114, 0.10);
             text-align: center;
-            border-top: 5px solid #3b82f6;
+            border-top: 5px solid #c3974c;
         }
 
         .tarjeta.verde {
-            border-top-color: #10b981;
+            border-top-color: #d68ea7;
         }
 
         .tarjeta.naranja {
-            border-top-color: #f59e0b;
+            border-top-color: #c3974c;
         }
 
         .tarjeta h3 {
-            color: #64748b;
+            color: #8d5b6b;
             margin: 0 0 10px 0;
             font-size: 16px;
             text-transform: uppercase;
@@ -116,7 +117,7 @@ $valor_inventario = $resultado_valor->fetch_assoc()['total'];
         .tarjeta .numero {
             font-size: 32px;
             font-weight: bold;
-            color: #0f172a;
+            color: #4a2635;
             margin: 0;
         }
 
@@ -127,20 +128,21 @@ $valor_inventario = $resultado_valor->fetch_assoc()['total'];
         }
 
         .modulo {
-            background: #3b82f6;
+            background: #c77d98;
             color: white;
             flex: 1;
             padding: 20px;
             text-align: center;
-            border-radius: 8px;
+            border-radius: 10px;
             text-decoration: none;
+            font-family: Georgia, 'Times New Roman', serif;
             font-size: 18px;
             font-weight: bold;
             transition: background 0.3s;
         }
 
         .modulo:hover {
-            background: #2563eb;
+            background: #b86884;
         }
 
         /* Adaptación para celulares */
@@ -221,7 +223,7 @@ $valor_inventario = $resultado_valor->fetch_assoc()['total'];
             🚚 Módulo de Proveedores
         </a>
 
-        <a href="nueva_compra.php" class="modulo" style="background: #10b981;">
+        <a href="nueva_compra.php" class="modulo" style="background: #c3974c;">
             Registrar ingreso de mercadería
         </a>
 

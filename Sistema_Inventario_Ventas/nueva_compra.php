@@ -16,14 +16,14 @@ $productos = $conn->query('SELECT id, nombre_producto FROM productos ORDER BY no
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar compra</title>
     <style>
-        body { font-family: Arial, sans-serif; background: #f1f5f9; margin: 0; padding: 30px; color: #0f172a; }
-        .container { max-width: 600px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, .08); }
+        body { font-family: Georgia, 'Times New Roman', serif; background: #fff3f6; margin: 0; padding: 30px; color: #4a2635; }
+        .container { max-width: 600px; margin: auto; background: #fffafb; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(152, 91, 114, .14); border: 1px solid #efd6a8; }
         .form-group { margin-bottom: 16px; }
-        label { display: block; margin-bottom: 6px; font-weight: bold; color: #334155; }
-        select, input { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 5px; box-sizing: border-box; }
-        button { width: 100%; padding: 12px; background: #10b981; color: #fff; border: 0; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; }
-        button:hover { background: #059669; }
-        .btn-volver { display: inline-block; margin-bottom: 20px; color: #64748b; text-decoration: none; font-weight: bold; }
+        label { display: block; margin-bottom: 6px; font-weight: bold; color: #8d5b6b; }
+        select, input { width: 100%; padding: 10px; border: 1px solid #e8bfd0; border-radius: 5px; box-sizing: border-box; background: #fff; }
+        button { width: 100%; padding: 12px; background: #c3974c; color: #fff; border: 0; border-radius: 5px; font-family: Georgia, 'Times New Roman', serif; font-size: 16px; font-weight: bold; cursor: pointer; }
+        button:hover { background: #aa7e35; }
+        .btn-volver { display: inline-block; margin-bottom: 20px; color: #a35f79; text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
