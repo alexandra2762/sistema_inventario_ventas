@@ -38,6 +38,11 @@ try {
     $stmt_detalle->execute();
     $stmt_detalle->close();
 
+    $stmt_stock = $conn->prepare('UPDATE productos SET stock = stock + ? WHERE id = ?');
+    $stmt_stock->bind_param('ii', $cantidad, $producto_id);
+    $stmt_stock->execute();
+    $stmt_stock->close();
+
     $conn->commit();
     header('Location: Dashboard.php?compra=guardada');
     exit();
