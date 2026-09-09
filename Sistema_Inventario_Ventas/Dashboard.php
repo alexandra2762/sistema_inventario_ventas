@@ -227,6 +227,10 @@ $valor_inventario = $resultado_valor->fetch_assoc()['total'];
             Registrar ingreso de mercadería
         </a>
 
+        <a href="historial_compras.php" class="modulo">
+            Historial de Compras
+        </a>
+
         <a href="index.php" class="modulo">
             Página Principal
         </a>
