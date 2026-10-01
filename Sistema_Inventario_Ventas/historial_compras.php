@@ -47,6 +47,7 @@ $resultado = $conn->query($sql);
                     <th>Proveedor</th>
                     <th>Usuario Responsable</th>
                     <th>Total Invertido</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -58,10 +59,13 @@ $resultado = $conn->query($sql);
                             <td><?= htmlspecialchars($fila['proveedor'], ENT_QUOTES, 'UTF-8') ?></td>
                             <td><?= htmlspecialchars($fila['cajero'], ENT_QUOTES, 'UTF-8') ?></td>
                             <td class="monto">$<?= number_format((float) $fila['total'], 2) ?></td>
+                            <td>
+                                <a href="detalle_compra.php?id=<?php echo $fila['numero_factura']; ?>" style="background: #2563eb; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size: 13px; font-weight: bold;">Ver Detalle</a>
+                            </td>
                         </tr>
                     <?php endwhile; ?>
                 <?php else: ?>
-                    <tr><td colspan="5">Sin registros de compras disponibles.</td></tr>
+                    <tr><td colspan="6">Sin registros de compras disponibles.</td></tr>
                 <?php endif; ?>
             </tbody>
         </table>
